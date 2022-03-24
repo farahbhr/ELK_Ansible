@@ -3,15 +3,15 @@
   yum: 
     name: 
     - epel-release
-    - java-1.8.0-openjdk
-    - java-1.8.0-openjdk-devel
+    - java-11-openjdk
+    - java-11-openjdk-devel
     state: latest
 
 - name: Install Ansible and more
   yum:
     name:
     - wget
-#    - nginx
+    #- nginx
     state: latest
 
 #- name: Start and Enable Nginx
@@ -19,5 +19,4 @@
 #    name: nginx
 #    state: started
 #    enabled: yes
-#  notify: Restart Nginx
-  
+#  notify: Restart Nginx  

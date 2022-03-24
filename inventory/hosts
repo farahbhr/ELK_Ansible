@@ -1,7 +1,10 @@
 
 [remote]
-192.168.100.16   
+192.168.100.20
+
+
+[remote:vars]
 ansible_user=linux
 ansible_password=farah123
-
+ansible_sudo_pass=farah123
  

@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: remote
   tasks:
 
   - name: Install Prerequisites
