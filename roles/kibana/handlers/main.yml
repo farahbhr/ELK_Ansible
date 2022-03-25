@@ -4,8 +4,8 @@
     state: restarted
     name: kibana
 
-- name: Restart Nginx
-  service:
-    state: restarted
-    name: nginx
+#- name: Restart Nginx
+#  service:
+#    state: restarted
+#    name: nginx
   

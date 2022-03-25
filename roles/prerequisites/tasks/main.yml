@@ -1,5 +1,5 @@
 ---
-- name: Install Oracle Java 8
+- name: Install Oracle Java 11
   yum: 
     name: 
     - epel-release
@@ -11,7 +11,7 @@
   yum:
     name:
     - wget
-    #- nginx
+    - nginx
     state: latest
 
 #- name: Start and Enable Nginx
