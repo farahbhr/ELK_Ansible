@@ -1,0 +1,19 @@
+---
+
+
+host_ip: '192.168.100.21'
+elasticsearch_version: '7.x'
+
+#Elasticsearch:
+elastic_port: 9200
+elastic_yml: /etc/elasticsearch/elasticsearch.yml
+
+#Kibana:
+kibana_port: 5601
+kibana_yml: /etc/kibana/kibana.yml
+
+#Logstash:
+logstash_port: 5044
+
+#Filebeat:
+filebeat_yml: /etc/filebeat/filebeat.yml

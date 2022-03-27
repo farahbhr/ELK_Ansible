@@ -1,4 +1,8 @@
 ---
+- name: Include variables
+  include_vars:
+    file: ../../vars.yml
+
 - name: Install the public signing key
   rpm_key: 
     key: https://artifacts.elastic.co/GPG-KEY-elasticsearch

@@ -52,11 +52,11 @@ path.logs: /var/log/elasticsearch
 #
 # Set the bind address to a specific IP (IPv4 or IPv6):
 #
-network.host: 192.168.100.21
+network.host: {{ host_ip }}
 #
 # Set a custom port for HTTP:
 #
-http.port: 9200
+http.port: {{ elastic_port }}
 
 
 cluster.initial_master_nodes: node-1

@@ -1,4 +1,8 @@
 ---
+- name: Include variables
+  include_vars:
+    file: ../../vars.yml
+
 - name: Install filebeat
   yum: 
     name: filebeat
@@ -8,7 +12,7 @@
 - name: Create filebeat config
   template:
     src: filebeat.config.j2
-    dest: /etc/filebeat/filebeat.yml
+    dest: "{{ filebeat_yml }}"
   notify: Restart filebeat
 
 - name: Force systemd to reread configs

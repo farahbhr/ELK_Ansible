@@ -1,4 +1,8 @@
 ---
+- name: Include variables
+  include_vars:
+    file: ../../vars.yml
+
 - name: Install Oracle Java 11
   yum: 
     name: 
