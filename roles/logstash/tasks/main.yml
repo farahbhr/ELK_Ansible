@@ -15,11 +15,11 @@
     dest: /etc/logstash/conf.d/02-beats-input.conf
   notify: Restart Logstash
 
-- name: Create 10-syslog-filter.conf
-  template:
-    src: 10-syslog-filter.conf.j2
-    dest: /etc/logstash/conf.d/10-syslog-filter.conf
-  notify: Restart Logstash
+#- name: Create 10-syslog-filter.conf
+#  template:
+#    src: 10-syslog-filter.conf.j2
+#    dest: /etc/logstash/conf.d/10-syslog-filter.conf
+#  notify: Restart Logstash
 
 - name: Create 30-elasticsearch-output.conf
   template:

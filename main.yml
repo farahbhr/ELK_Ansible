@@ -6,26 +6,32 @@
   tasks:
 
   - name: Install Prerequisites
+    become: yes
     import_role:
       name: prerequisites
 
   - name: Disable SELinux
+    become: yes
     selinux:
       state: disabled
 
   - name: Elk_Stack Repo
+    become: yes
     import_role:
       name: elk_stack
 
   - name: Install ElasticSearch
+    become: yes
     import_role:
       name: elasticsearch
   
   - name: Install Kibana
+    become: yes
     import_role:
       name: kibana
 
   - name: Install Logstash
+    become: yes
     import_role:
       name: logstash 
 
@@ -33,14 +39,17 @@
   tasks:
 
   - name: Disable SELinux
+    become: yes
     selinux:
       state: disabled
 
   - name: Elk_Stack Repo
+    become: yes
     import_role:
       name: elk_stack
 
   - name: Install Filebeat
+    become: yes
     import_role:
       name: filebeat
 
