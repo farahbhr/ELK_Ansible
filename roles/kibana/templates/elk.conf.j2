@@ -5,8 +5,8 @@ server {
     server_name {{ host_ip }};
 
 
-    ssl_certificate      /etc/letsencrypt/archive/{{ dns_or_IP }}/cert1.pem;
-    ssl_certificate_key  /etc/letsencrypt/archive/{{ dns_or_IP }}/privkey1.pem;
+    ssl_certificate      /etc/letsencrypt/archive/{{ host_ip }}/cert1.pem;
+    ssl_certificate_key  /etc/letsencrypt/archive/{{ host_ip }}/privkey1.pem;
     
 
 
