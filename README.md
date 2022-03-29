@@ -1,7 +1,7 @@
 # ELK_Ansible
 
 - To run the playbook:</br>
-sudo ansible-playbook -i inventory main.yml -b
+ansible-playbook main.yml
 
 - To verify if elasticsearch is installed on the remote machine: </br>
 curl -X GET "192.168.100.21:9200"
