@@ -2,6 +2,6 @@ output {
   elasticsearch {
     hosts => ["{{ host_ip }}:{{ elastic_port }}"]
     #manage_template => false
-    #index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
+    index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
   }
 }
